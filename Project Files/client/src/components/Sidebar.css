@@ -1,0 +1,127 @@
+.sidebar {
+  width: 220px;
+  background: #23272a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  min-height: 100vh;
+  box-shadow: 2px 0 12px #181a1b33;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.sidebar h2 {
+  font-size: 1.7rem;
+  margin-bottom: 32px;
+  color: #8ab4f8;
+  letter-spacing: 1px;
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #b0b8c1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border-radius: 0.5rem;
+  margin-bottom: 8px;
+  width: 90%;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar-link.active, .sidebar-link:hover {
+  background: #8ab4f8;
+  color: #181a1b;
+}
+@media (max-width: 900px) {
+  .sidebar {
+    width: 60px;
+    padding: 16px 0;
+  }
+  .sidebar h2, .sidebar-link span {
+    display: none;
+  }
+  .sidebar-link {
+    justify-content: center;
+    padding: 12px 0;
+    font-size: 1.3rem;
+  }
+}
+
+/* Sidebar Drawer Styles */
+.sidebar-drawer {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 220px;
+  height: 100vh;
+  background: #23272a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  box-shadow: 2px 0 12px #181a1b33;
+  z-index: 1200;
+  transition: left 0.3s cubic-bezier(.4,0,.2,1);
+}
+.sidebar-drawer.open {
+  left: 0;
+}
+.sidebar-drawer-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: none;
+  border: none;
+  color: #8ab4f8;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.sidebar-menu-btn {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  background: #23272a;
+  color: #8ab4f8;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  z-index: 1300;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #181a1b22;
+}
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #181a1bcc;
+  z-index: 1100;
+}
+
+/* Hide old sidebar styles */
+.sidebar {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .sidebar-drawer, .sidebar-drawer.open {
+    width: 80vw;
+    min-width: 0;
+    left: -80vw;
+  }
+  .sidebar-drawer.open {
+    left: 0;
+  }
+  .sidebar-menu-btn {
+    left: 12px;
+    top: 12px;
+    padding: 8px 10px;
+    font-size: 1.2rem;
+  }
+} 

@@ -1,0 +1,55 @@
+.all-users-page{
+    background: #181a1b;
+    height: 100vh;
+    width: 100%;
+    padding: 15vh 3vw 3vh 3vw;
+    color: #f5f6fa;
+}
+
+.all-users-page h3{
+    color: #8ab4f8;
+    font-weight: 600;
+}
+
+.user-cards{
+    margin-top: 4vh;
+    height: 70vh;
+    width: 70vw;
+    padding: 2vh 1vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-card{
+    color: #f5f6fa;
+    display: flex;
+    gap: 40px;
+    background: #23272a;
+    padding: 3vh 2vw;
+    width: 65vw;
+    border-radius: 0.8rem;
+    border: 1px solid #23272a;
+    box-shadow: none;
+    transition: border 0.2s;
+}
+
+.user-card:hover {
+    border: 1px solid #8ab4f8;
+}
+
+.user-card span{
+
+}
+
+.user-card span h5{
+    font-weight: 400;
+    color: #8ab4f8;
+}
+
+.user-card span p{
+    color: #b0b8c1;
+    margin: 0;
+}
+

@@ -1,0 +1,58 @@
+.restaurantHome-page{
+    background: #181a1b;
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    color: #f5f6fa;
+}
+
+.restaurant-approval-required{
+    text-align: center;
+    background: #23272a;
+    width: 70vw;
+    height: fit-content;
+    position: absolute;
+    top: 30vh;
+    left: 15vw;
+    padding: 15vh 0;
+    border-radius: 0.5rem;
+}
+.restaurant-approval-required h3{
+    color: #e57373;
+}
+.restaurant-approval-required p{
+    color: #b0b8c1;
+}
+
+.admin-home-card{
+    color: #f5f6fa;
+    text-align: center;
+    background: #23272a;
+    width: 70%;
+    margin-left: 15%;
+    padding: 4vh 0;
+    border-radius: 0.8rem;
+    border: 1px solid #23272a;
+    box-shadow: none;
+    transition: border 0.2s;
+}
+.admin-home-card:hover{
+    border: 1px solid #8ab4f8;
+}
+
+.admin-home-card button{
+    border: none;
+    background: #8ab4f8;
+    color: #181a1b;
+    padding: 7px 25px;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.admin-home-card button:hover{
+    background: #393e46;
+    color: #f5f6fa;
+}

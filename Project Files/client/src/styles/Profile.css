@@ -1,0 +1,156 @@
+.profilePage{
+    margin-top: 15vh;
+    display: flex;
+    background: #181a1b;
+    color: #f5f6fa;
+}
+
+.profileCard{
+    width: 21%;
+    margin: 5vh 2%;
+    padding: 2vh 1.5vw;
+    background: #23272a;
+    height: fit-content;
+    border: 1px solid #23272a;
+    border-radius: 0.6rem;
+    color: #f5f6fa;
+    box-shadow: none;
+    transition: border 0.2s;
+}
+.profileCard:hover{
+    border: 1px solid #8ab4f8;
+}
+
+.profileCard span{
+    display: flex;
+    align-items: center;
+    gap: 10px;    
+    margin-bottom: 10px;
+}
+.profileCard span h5{
+    font-size: 1rem;
+    margin: 0;
+    color: #8ab4f8;
+    font-weight: 500;
+}
+.profileCard span p{
+    margin: 0;
+    color: #b0b8c1;
+}
+
+.profileCard button {
+    background: #e57373;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 6px 18px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.profileCard button:hover {
+    background: #c62828;
+}
+
+.profileOrders-container{
+    width: 75%;
+    height: fit-content;
+}
+
+.profileOrders-container h3{
+    font-size: 1.5rem;
+    margin: 2vh 3vw;
+    color: #8ab4f8;
+}
+
+.profileOrders{
+    height: 70vh;
+    margin: 2vh 2vw;
+    padding: 2vh 1.5vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profileOrder{
+    display: flex;
+    gap: 30px;
+    background: #23272a;
+    padding: 3vh;
+    border: 1px solid #393e46;
+    border-radius: 0.8rem;
+    color: #f5f6fa;
+    box-shadow: none;
+}
+
+.profileOrder:hover{
+    border: 1px solid #8ab4f8;
+}
+
+.profileOrder img{
+    height: 25vh;
+    width: 17vw;
+    border-radius: 0.3rem;
+    object-fit: cover;
+    background: #181a1b;
+    border: 2px solid #393e46;
+}
+
+.profileOrder-data{
+    width: 90%;
+}
+
+.profileOrder-data h4{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #8ab4f8;
+}
+
+.profileOrder-data ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 10px;
+}
+
+.profileOrder-data ul li{
+    margin: 0;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: rgb(131, 136, 141);
+}
+
+.profileOrder-data div{
+    display: flex;
+    gap: 20px;
+}
+
+.profileOrder-data div span p{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: #b0b8c1;
+}
+.profileOrder-data div span p b{
+    color: #8ab4f8;
+}
+
+.profileOrder-data div span h5{
+    font-size: 1rem;
+    color: #8ab4f8;
+    margin-bottom: 20px;
+}
+
+.profileOrder-data div span h5 b{
+    color: #8ab4f8;
+}
+
+.rating-stars{
+    display: flex;
+    gap: 15px !important;
+}
+
+.rating-star-icons{
+    font-size: 1.2rem;
+}
+.star-rated{
+    color: #ffb300;
+}
