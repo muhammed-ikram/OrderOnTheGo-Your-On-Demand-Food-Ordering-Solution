@@ -1,0 +1,1 @@
+This Documentation Folder will contain all the phases in the project development of the project, Order On The Go: A Food Delivery app
